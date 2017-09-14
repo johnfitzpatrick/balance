@@ -4,6 +4,13 @@ This example habitat application that takes a simple web application (webapp) an
 
 ## Build
 
+    $ hab pkg build webapp
+    $ hab pkg export docker franklinwebber/webapp
+    $ hab pkg build haproxy
+    $ hab pkg export docker franklinwebber/haproxy
+
+### Within the Studio
+
     $ hab studio enter
     $ cd webapp
     $ build
