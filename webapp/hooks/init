@@ -7,5 +7,5 @@ source {{pkg.svc_path}}/hooks/reconfigure
 mkdir -p {{pkg.svc_data_path}}/htdocs
 
 mkdir -p {{pkg.svc_data_path}}/cgi-bin
-cp {{pkg.path}}/hostname  {{pkg.svc_data_path}}/cgi-bin/
-chmod 755 {{pkg.svc_data_path}}/cgi-bin/hostname
+cp {{pkg.path}}/hello-world  {{pkg.svc_data_path}}/cgi-bin/
+chmod 755 {{pkg.svc_data_path}}/cgi-bin/hello-world

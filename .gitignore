@@ -1,3 +1,5 @@
+.gitignore
+.DS_Store
 /webapp/results
 /haproxy/results
 /results
