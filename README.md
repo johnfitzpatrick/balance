@@ -25,9 +25,9 @@ This example habitat application that takes a simple web application (webapp) an
 
 To verify that each web server is working:
 
-    $ curl localhost:8000/cgi-bin/hostname
-    $ curl localhost:8001/cgi-bin/hostname
+    $ curl localhost:8000/cgi-bin/hello-world
+    $ curl localhost:8001/cgi-bin/hello-world
 
 To verify that the load balancer is working:
 
-    $ curl localhost:8002/cgi-bin/hostname
+    $ curl localhost:8002/cgi-bin/hello-world
