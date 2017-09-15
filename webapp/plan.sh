@@ -1,7 +1,7 @@
+pkg_origin=cheftraining
 pkg_name=webapp
-pkg_origin=franklinwebber
 pkg_version="0.2.0"
-pkg_maintainer="Franklin Webber <franklin.webber@gmail.com>"
+pkg_maintainer="Chef Training <training@chef.io>"
 pkg_license=('Apache-2.0')
 pkg_deps=(core/httpd)
 pkg_svc_user="root"
@@ -19,5 +19,5 @@ do_build() {
 }
 
 do_install() {
-  cp hostname ${pkg_prefix}/
+  cp hello-world ${pkg_prefix}/
 }
