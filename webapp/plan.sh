@@ -20,4 +20,5 @@ do_build() {
 
 do_install() {
   cp hello-world ${pkg_prefix}/
+  cp config/webapp.conf ${pkg_prefix}/
 }

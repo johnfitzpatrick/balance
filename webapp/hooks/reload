@@ -1,0 +1,1 @@
+cp {{pkg.svc_config_path}}/webapp.conf {{pkg.svc_data_path}}/cgi-bin/
