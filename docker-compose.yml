@@ -2,11 +2,13 @@ version: '3'
 services:
   webapp-1:
     image: cheftraining/webapp
+    hostname: "web1"
     ports:
       - "8000:80"
       - "9631:9631"
   webapp-2:
     image: cheftraining/webapp
+    hostname: "web2"
     command: --peer webapp-1
     links:
       - webapp-1
@@ -15,10 +17,10 @@ services:
       - "9632:9631"
   lb-1:
     image: cheftraining/haproxy
+    hostname: "lb"
     command: --peer webapp-2 --bind backend:webapp.default
     links:
       - webapp-2
     ports:
       - "8002:80"
       - "9633:9631"
-      - "8081:9638"
